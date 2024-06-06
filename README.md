@@ -2,28 +2,33 @@
 
 ## Description
 
-This project showcases an automatic LED control system using an Arduino and an LDR (Light Dependent Resistor). The LED turns on during nighttime and turns off during daytime based on the ambient light intensity detected by the LDR.
+This project demonstrates an automatic LED control system using an Arduino and a Light Dependent Resistor (LDR). The LED lights up during nighttime when the ambient light level falls below a certain threshold and turns off during daytime when the ambient light level exceeds the threshold.
 
 ## Components Needed
 
 1. **Arduino UNO**
 2. **LED**
 3. **Light Dependent Resistor (LDR)**
-4. **Resistor (for LDR voltage divider)**
+4. **Resistor (for the LDR voltage divider)**
 5. **Jumper Wires**
+6. **Breadboard**
+
+## Diagram
+
+*I will update the block diagram with a logo or watermark ASAP. Please leave it for now.*
 
 ## Instructions
 
-### Circuit Connection
+### Connecting the Components
 
-1. **Connect LDR to Arduino:**
-   - Connect one leg of the LDR to 5V through a resistor.
+1. **Connect the LDR to Arduino:**
+   - Connect one leg of the LDR to 5V.
    - Connect the other leg of the LDR to analog pin A0.
-   - Connect a resistor from the junction of the LDR and the first resistor to GND.
+   - Connect a resistor from the junction of the LDR and the analog pin A0 to GND (this forms a voltage divider).
 
-2. **Connect LED to Arduino:**
+2. **Connect the LED to Arduino:**
    - Connect the anode (long leg) of the LED to digital pin 13.
-   - Connect the cathode (short leg) of the LED to GND through a current-limiting resistor (if needed).
+   - Connect the cathode (short leg) of the LED to GND through a current-limiting resistor.
 
 ### Power the Arduino
 
@@ -38,20 +43,21 @@ This project showcases an automatic LED control system using an Arduino and an L
    - Upload the program to the Arduino.
 
 2. **Monitor the Output:**
-   - The LED will turn on when it's nighttime (ambient light intensity below the threshold).
-   - The LED will turn off when it's daytime (ambient light intensity above the threshold).
-   - Real-time LDR readings will be displayed on the Serial Monitor.
+   - Open the Serial Monitor in the Arduino IDE to observe the sensor values and status messages.
+   - The LED will turn on when the LDR value falls below the threshold, indicating low light (nighttime).
+   - The LED will turn off when the LDR value rises above the threshold, indicating sufficient light (daytime).
 
 ## Project Operation
 
 - **Initialization:**
-  - Serial communication is initiated at 9600 baud rate.
-  - Pin modes for LED and LDR are set.
+  - The Serial Monitor is set up to communicate at a baud rate of 9600.
+  - The LED pin is set as an output, and the LDR pin is set as an input.
 
 - **Automatic LED Control:**
-  - The Arduino continuously reads the LDR value.
-  - If the LDR value falls below the threshold, indicating nighttime, the LED turns on.
-  - If the LDR value rises above the threshold, indicating daytime, the LED turns off.
+  - The Arduino reads the LDR value from analog pin A0.
+  - If the LDR value is below the threshold (indicating darkness), the LED is turned on, and a message is printed to the Serial Monitor.
+  - If the LDR value is above the threshold (indicating light), the LED is turned off, and a message is printed to the Serial Monitor.
+  - The system updates every second.
 
 ## Applications
 
