@@ -65,15 +65,15 @@ This project demonstrates an automatic LED control system using an Arduino and a
 2. **Security Systems:** Implement automatic lighting for security purposes during night hours.
 3. **Smart Home Automation:** Integrate into a larger smart home system for enhanced convenience and efficiency.
 
-## Support
+---
 
-For any issues or further assistance, please contact us:
+### Whether you're working on electronics projects, IoT applications, or robotics innovations, Projects Learner is your go-to platform for guidance and expertise.
 
-- 🌐 [Projects Learner](https://projectslearner.com)
-- 📧 Email: projectslearner@gmail.com
-- 📸 Instagram
-- 📘 Facebook
-- ▶️ YouTube
-- 📘 LinkedIn
+🌐 [projectslearner.com](https://www.projectslearner.com)  
+📧 [projectslearner@gmail.com](mailto:projectslearner@gmail.com)  
+📸 [Instagram](https://www.instagram.com/projectslearner/)  
+📘 [Facebook](https://www.facebook.com/projectslearner)  
+▶️ [YouTube](https://www.youtube.com/@ProjectsLearner)  
+📘 [LinkedIn](https://www.linkedin.com/in/projectslearner)  
 
-Made for you with ❣️ from ProjectsLearner.
+## Made for you with ❣️ from ProjectsLearner
